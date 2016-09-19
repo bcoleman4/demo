@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+#source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -44,7 +44,7 @@ gem 'guard-minitest'
 end
 
 group :production do
-gem 'pg'
+#gem 'pg'
 gem 'rails_12factor'
 gem 'unicorn'
 end
