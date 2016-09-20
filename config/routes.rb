@@ -20,6 +20,8 @@ Rails.application.routes.draw do
   resources :password_resets,     only: [:new, :create, :edit, :update]
 
   get 'chart' => 'static_pages#chart'
+  get 'survey' => 'static_pages#survey'
+  get 'pdf' => 'static_pages#pdf'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

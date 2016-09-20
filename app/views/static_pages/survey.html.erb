@@ -1,0 +1,76 @@
+<p id="notice"><%= notice %></p>
+    
+<h1>Input your Responses</h1>
+
+<p id="notice"><%= notice %></p>
+
+<h1>Survey Page 1</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Statement</th>
+      <th>Strongly Agree</th>
+      <th>Agree</th>
+      <th>Neutral</th>
+      <th>Disagree</th>
+      <th>Strongly Disagree</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+  <tbody>
+        <tr>
+        <td><%= 'Meaning and Purpose' %></td>
+        <td><%= radio_button_tag :Q1, 1  %></td>
+        <td><%= radio_button_tag :Q1, 2 %></td>
+        <td><%= radio_button_tag :Q1, 3 %></td>
+        <td><%= radio_button_tag :Q1, 4 %></td>
+        <td><%= radio_button_tag :Q1, 5 %></td>
+        </tr>
+  </tbody>
+  <tbody>
+        <tr>
+        <td><%= 'General Engagement' %></td>
+        <td><%= radio_button_tag :Q2, 1 %></td>
+        <td><%= radio_button_tag :Q2, 2 %></td>
+        <td><%= radio_button_tag :Q2, 3 %></td>
+        <td><%= radio_button_tag :Q2, 4 %></td>
+        <td><%= radio_button_tag :Q2, 5 %></td>
+        </tr>
+  </tbody>
+  <tbody>
+        <tr>
+        <td><%= 'Work Engagement' %></td>
+        <td><%= radio_button_tag :Q3, 1 %></td>
+        <td><%= radio_button_tag :Q3, 2 %></td>
+        <td><%= radio_button_tag :Q3, 3 %></td>
+        <td><%= radio_button_tag :Q3, 4 %></td>
+        <td><%= radio_button_tag :Q3, 5 %></td>
+        </tr>
+  </tbody>
+    <tbody>
+        <tr>
+        <td><%= 'Perseverence' %></td>
+        <td><%= radio_button_tag :Q4, 1 %></td>
+        <td><%= radio_button_tag :Q4, 2 %></td>
+        <td><%= radio_button_tag :Q4, 3 %></td>
+        <td><%= radio_button_tag :Q4, 4 %></td>
+        <td><%= radio_button_tag :Q4, 5 %></td>
+        </tr>
+  </tbody>
+    <tbody>
+        <tr>
+        <td><%= 'Learning and Growth' %></td>
+        <td><%= radio_button_tag :Q5, 1 %></td>
+        <td><%= radio_button_tag :Q5, 2 %></td>
+        <td><%= radio_button_tag :Q5, 3 %></td>
+        <td><%= radio_button_tag :Q5, 4 %></td>
+        <td><%= radio_button_tag :Q5, 5 %></td>
+        </tr>
+  </tbody>
+</table>
+</table>
+</table>
+<br>
+<%= link_to 'Submit', '/chart' %>
+
