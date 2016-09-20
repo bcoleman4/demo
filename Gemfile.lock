@@ -112,6 +112,10 @@ GEM
     multi_json (1.10.1)
     nokogiri (1.6.5)
       mini_portile (~> 0.6.0)
+    pdf-core (0.6.1)
+    prawn (2.1.0)
+      pdf-core (~> 0.6.1)
+      ttfunk (~> 1.4.0)
     pry (0.10.1)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -182,6 +186,7 @@ GEM
     tilt (1.4.1)
     timers (4.0.1)
       hitimes
+    ttfunk (1.4.0)
     turbolinks (2.5.2)
       coffee-rails
     tzinfo (1.2.2)
@@ -214,6 +219,7 @@ DEPENDENCIES
   jquery-rails
   mini_backtrace
   minitest-reporters
+  prawn
   rails (= 4.2.0.rc3)
   rails_12factor
   sass-rails (~> 4.0.3)
