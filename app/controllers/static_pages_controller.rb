@@ -54,6 +54,7 @@ class StaticPagesController < ApplicationController
       f.chart(:polar=> true)
       f.xAxis(categories: ["TOTAL SCORE", "Meaning and Purpose", "General Engagement", "Work Engagement", "Perseverence", "Learning and Growth" ], tickmarkPlacement: 'on')
       f.series(:type=> 'line', name: "Your Score", yAxis: 0, data: [6.6, 6.9, 4.2, 5.6, 6.3, 9.4], pointPlacement: 'on')
+      f.series(:type=> 'area', name: 'Average', yAxis: 0, data: [5.0, 6.0, 2.0, 4.6, 5.5, 9.0])
       f.yAxis [
         {gridlineInterpolation: 'polygon' },
         ]
