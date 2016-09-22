@@ -8,7 +8,17 @@
   </h2>
 
   <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+  <br></br>
+  <a href="#" data-background-color="#990000">Paint it red</a>
+  <br></br>
+  <a href="#" data-background-color="#009900" data-text-color="#FFFFFF">Paint it green</a>
+  <br></br>
+  <a href="#" data-background-color="#000099" data-text-color="#FFFFFF">Paint it blue</a>
 </div>
+
+<%= form_tag('/articles', remote: true) do %>
+  ...
+<% end %>
 
 <%= link_to image_tag("website_allsund_logo.png", alt: "Allsund logo"),
             'http://www.allsund.com/' %>
