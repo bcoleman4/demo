@@ -1,14 +1,16 @@
 class GuestsCleanupJob < ActiveJob::Base
   queue_as :default
 
-  p "starting job"
+  puts "starting job"
   @atime = Time.new
-  p "Time now is #{@atime}"
+  puts "Time now is #{@atime}"
   def perform()
-  	p "inside perform def"
+  	puts "inside perform def"
   	variablea = 1
   	until variablea >= 10 do
-    p "I'm working with variablea = #{variablea}"
+  		outputa = "I'm working with the variablea = #{variablea}" + "\r"
+    print outputa
+    $stdout.flush
     sleep (1)
     variablea = variablea +1
 	end
