@@ -1,7 +1,12 @@
 class StaticPagesController < ApplicationController
   before_action :logged_in_user, only: [:index, :edit, :update, :destroy]
+
+  require 'sidekiq/api'
   def home
   	#render text: "This is Home"
+    Sidekiq::Queue.new.clear
+    GuestsCleanupJob.set(wait: 5.seconds).perform_later()
+    #GuestsCleanupJob.perform_later
   end
 
   def help

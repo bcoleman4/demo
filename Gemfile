@@ -31,6 +31,8 @@ gem 'sdoc', 			'~> 0.4.0',          group: :doc
 gem 'prawn'
 # gem for charts
 gem 'lazy_high_charts'
+# gem for queue system
+gem 'sidekiq'
 
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
